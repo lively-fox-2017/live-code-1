@@ -1,14 +1,35 @@
 function isPrime(angka) {
-  //your code here
+  var max = Math.sqrt(angka);
+  if(angka === 1){
+    return false;
+  }
+    for( var i = 2;  i <= max;  i++ ) {
+      if( angka % i == 0 )
+        return false;
+    }
+    return true;
 }
 
 function getPrime(deret) {
-  //your code here
+  let tampung = []
+  for (var i = 1; i < 50; i++) {
+    cek = 0
+    for (var j = 2; j < i; j++) {
+      if (i % j == 0) {
+        cek++
+      }
+    }
+    if (cek == 0) {
+      tampung.push(i)
+    }
+  }
+  return tampung[deret];
 }
 
-isPrime(1) //false
-isPrime(5) //true
 
-getPrime(1) //2
-getPrime(5) //11
-getPrime(11) //19
+
+
+console.log(isPrime(1)) //false
+console.log(isPrime(5)) //true
+console.log(getPrime(1)) //2
+console.log(getPrime(5)) //11
