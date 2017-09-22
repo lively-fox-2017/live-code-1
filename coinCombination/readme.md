@@ -4,6 +4,8 @@ Logic - Unique Coin Combination
 
 Kita memiliki coin dengan nilai sbb : 1,5,7,9,11, masing-masing coin dibatasi hanya berjumlah 1. Buat sebuah function, yang menerima number berupa sebuah angka (maksimum 33), bisa ditambahkan parameter lain apabila dibutuhkan. Function akan mengembalikan semua kombinasi coin yang jumlahnya sesuai dengan angka yang dimasukkan dan unik tidak boleh ada yang duplikat (karena masing-masing coin jumlahnya hanya 1).
 
+1, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33
+
 Driver Code :
 function getCoins(value) {
 	//write your code here
