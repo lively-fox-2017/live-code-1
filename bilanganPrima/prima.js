@@ -1,9 +1,18 @@
 function isPrime(angka) {
   //your code here
+  for(var i=1;i<(angka-1);i++){
+    if(angka%i==0){
+  console.log(false);
+    }else {
+      console.log(true);
+    }
+  }
+  return angka
 }
 
 function getPrime(deret) {
   //your code here
+  
 }
 
 isPrime(1) //false
