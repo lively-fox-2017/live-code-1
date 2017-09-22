@@ -24,3 +24,4 @@ function reorderingLetter(str, totalLevel) {
 
 reorderingLetter("DARWINFOX", 3) //DIXAWNORF
 reorderingLetter("ABCDEFGHIJKLMNOPQ", 5) //AIQBHJPCGKODFLNEM
+//reorderingLetter('ABCDEFGHIJKLMNOPQRS',5)
