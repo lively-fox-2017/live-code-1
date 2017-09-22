@@ -1,5 +1,5 @@
 function getCoins(value) {
-  if (value === 33)
+  if (value > 33)
     return -1;
 
   let result = [];
