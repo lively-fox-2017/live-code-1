@@ -1,5 +1,8 @@
 function reorderingLetter(str, totalLevel) {
   //your code here...
+  if (totalLevel > 6) {
+    return -1;
+  }
   let illustration = [];
   for (let i = 0; i < totalLevel; i++) {
     illustration.push([]);
