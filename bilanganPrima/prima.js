@@ -26,7 +26,6 @@ function getPrime(deret, angka = 2) {
 
 isPrime(5) //true
 isPrime(1) //false
-console.log(isPrime(6)); //false
 
 getPrime(1) //2
 getPrime(5) //11
