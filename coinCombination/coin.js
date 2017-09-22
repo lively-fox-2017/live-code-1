@@ -4,7 +4,6 @@ function getCoins(value) {
 
   let result = [];
   let coin = [1, 5, 7, 9, 11];
-  let sum = [1, 1, 1, 1, 1];
   for (let i = coin.length - 1; i >= 0; i--) {
     let val = value;
     let combination = [];
