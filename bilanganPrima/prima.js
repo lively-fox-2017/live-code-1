@@ -1,14 +1,39 @@
 function isPrime(angka) {
   //your code here
+
+
+  // cek kondisi pertama
+  if (angka === 1) {
+    return false;
+  }
+  for (var i = 2; i < angka; i++) {
+    if (angka % i === 0) {
+
+      return false;
+    }
+  }
+
+  return true;
 }
 
 function getPrime(deret) {
-  //your code here
+  var counter = 0;
+  for (var i = 2; i < 99999; i++){
+    
+    if (isPrime(i)){
+      counter++
+    }
+    if(counter === deret){
+      return i;
+    }
+  }
+
 }
 
-isPrime(1) //false
-isPrime(5) //true
 
-getPrime(1) //2
-getPrime(5) //11
-getPrime(11) //19
+console.log(isPrime(1)) //false
+console.log(isPrime(5)) //true
+
+console.log(getPrime(1)) //2
+console.log(getPrime(5)) //11
+console.log(getPrime(11)) //19
