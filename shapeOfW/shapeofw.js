@@ -15,6 +15,6 @@ function reorderingLetter(str, totalLevel) {
   }
   // return temp
 }
-
+//asdasd
 console.log(reorderingLetter('DARWINFOX', 3)) //DIXAWNORF
 // console.log(reorderingLetter('ABCDEFGHIJKLMNOPQ', 5)) //AIQBHJPCGKODFLNEM

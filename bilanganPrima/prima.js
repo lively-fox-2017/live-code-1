@@ -12,9 +12,9 @@ function isPrime(angka) {
 
 function getPrime(deret) {
   //your code here
-  
-}
 
+}
+//asd
 isPrime(1) //false
 isPrime(5) //true
 
