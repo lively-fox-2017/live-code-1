@@ -12,6 +12,33 @@ function reorderingLetter(str, totalLevel) {
   let count=0
   let a=0;
 
+  if(totalLevel===1){
+  	console.log(str)
+  }
+
+  if(totalLevel==2){
+
+  	while(a!=temp.length+1){
+  	if(totalLevel===2){
+  		temp1[count]=temp[a]
+  		a=a+2
+  		count++
+  	}
+  }
+  a=1
+  count=0
+  while(a!=temp.length){
+  	if(totalLevel===2){
+  		temp2[count]=temp[a]
+  		a=a+2
+  		count++
+  	}
+  }
+  tempHasil=temp1.concat(temp2).join('')
+  console.log(tempHasil)
+  		
+  }
+
   if(totalLevel===3){
   while(a!=temp.length+3){
   	if(totalLevel===3){
