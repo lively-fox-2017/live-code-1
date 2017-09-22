@@ -1,14 +1,26 @@
 function isPrime(angka) {
-  //your code here
+	if (angka < 2) return false;
+	for (let i = 2; i < angka; i++) {
+		if (angka % i === 0) return false;
+	}
+	return true;
 }
 
-function getPrime(deret) {
-  //your code here
+function getPrime(deret, count = 2, primeCount = 1) {
+	if (isPrime(count)) {
+		if (primeCount === deret) return count;
+		primeCount++;
+	}
+	
+	count++
+	return getPrime(deret, count, primeCount);
 }
 
-isPrime(1) //false
-isPrime(5) //true
+const prime = [ 2,3, 5, 7, 11, 13, 17, 19, 23,	29, 31,	37, 41,	43,	47, 53,	59,	61,	67,	71, 73,	79,	83,	89,	97];
 
-getPrime(1) //2
-getPrime(5) //11
-getPrime(11) //19
+console.log(isPrime(1)) //false
+console.log(isPrime(5)) //true
+
+console.log(getPrime(1)) //2
+console.log(getPrime(5)) //11
+console.log(getPrime(8)) //19
