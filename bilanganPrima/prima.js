@@ -53,9 +53,9 @@ function getPrime(deret, primes = [], currentPrime = 1) {
 
 }
 
-isPrime(1) //false
-isPrime(5) //true
-isPrime(22) //false
+isPrime(1); //false
+isPrime(5); //true
+isPrime(22); //false
 
-getPrime(8);// 19
-getPrime(11);; //31
+getPrime(8); // 19
+getPrime(11); //31
