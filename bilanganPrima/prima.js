@@ -3,7 +3,10 @@ function isPrime(angka) {
   if(angka == 1) {
     return false
   }
-  
+  else if(angka == 2) {
+    return true
+  }
+
   for(var i = 2; i < angka; i++) {
     if(angka % i == 0) {
       return false
@@ -14,11 +17,14 @@ function isPrime(angka) {
 
 function getPrime(deret) {
   //your code here
+  
 }
 
 console.log(isPrime(1)) //false
 console.log(isPrime(5)) //true
+console.log(isPrime(2)) //true
 
-//getPrime(1) //2
+
+console.log(getPrime(5)) //2
 //getPrime(5) //11
-//getPrime(11) //19
+//getPrime(8) //19
