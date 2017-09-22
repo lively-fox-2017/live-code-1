@@ -23,7 +23,7 @@ function getCoins(value) {
 		// 	guess.push(coin[i])
 		// 	guess.push(coin[coin.indexOf(value)])
 		// }
-		if (count + coin[i] <= value) {
+		if (count <= value) {
 			count += coin[i]
 			guess.push(coin[i])
 			console.log(count)
