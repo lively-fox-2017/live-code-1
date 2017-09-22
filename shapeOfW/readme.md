@@ -17,7 +17,7 @@ reorderingLetter(“DARWINFOX”, 3)
 //result yang diharapkan : DIXAWNORF
 
 Ilustrasi :
-D    	     I  	     X
+  D    	   I  	     X
     A	  W     N   O
       R		      F
 
