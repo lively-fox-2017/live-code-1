@@ -15,9 +15,9 @@ function isPrime(angka){
 
 function getPrime(deret) {
   //your code here
-  if(deret==1){
-    console.log(2);
-  }
+
+
+
 
 }
 
@@ -25,6 +25,6 @@ function getPrime(deret) {
 isPrime(1) //false
 isPrime(5) //true
 
-getPrime(1) //2
+// getPrime(1) //2
 // getPrime(5) //11
 // getPrime(11) //19
