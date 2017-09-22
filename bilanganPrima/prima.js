@@ -13,18 +13,15 @@ function isPrime(angka) {
   return true;
 }
 
-function getPrime(deret) {
-  let i = 1;
-  let prime = 1;
-  let result;
-  while (i <= deret) {
-    if (isPrime(prime)) {
-      i++;
-      result = prime
-    }
-    prime++;
+function getPrime(deret, angka = 2) {
+  if (deret == 0)
+    return angka;
+
+  if (isPrime(angka)) {
+    return getPrime(deret - 1, angka + 1)
+  } else {
+    return getPrime(deret, angka + 1)
   }
-  return result;
 }
 
 isPrime(5) //true
