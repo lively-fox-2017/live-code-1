@@ -1,11 +1,20 @@
+
 function reorderingLetter(str, totalLevel) {
-  //your code here...
+  // console.log(str);
   let arr = []
-  for (var i = 0; i < totalLevel.length; i++) {
+  let newStr = str.split('')
+  for (var i = 0; i < totalLevel; i++) {
     arr.push([])
   }
+
+    for (var j = 0; j < totalLevel; j++) {
+      for (var k = str[j].length; k < totalLevel; k++) {
+        arr[j].push(str[k])
+      }
+    }
   return arr
 }
 
-reorderingLetter(“DARWINFOX”, 3) //DIXAWNORF
-reorderingLetter(“ABCDEFGHIJKLMNOPQ”, 5) //AIQBHJPCGKODFLNEM
+
+console.log(reorderingLetter('DARWINFOX', 3)) //DIXAWNORF
+console.log(reorderingLetter('ABCDEFGHIJKLMNOPQ', 5)) //AIQBHJPCGKODFLNEM
