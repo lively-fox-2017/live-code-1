@@ -11,4 +11,4 @@ isPrime(5) //true
 
 getPrime(1) //2
 getPrime(5) //11
-getPrime(11) //19
+getPrime(8) //19
